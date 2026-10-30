@@ -1,0 +1,28 @@
+﻿Claude Desktop 简体中文一键安装包
+================================
+
+用法
+----
+1. 先在这台电脑上安装 Claude Desktop（https://claude.ai/download），并至少打开一次。
+2. 把整个「Claude中文一键安装」文件夹复制过去（不要只复制 bat 文件）。
+3. 双击「一键安装中文.bat」，在管理员授权弹窗里点「是」。
+4. Claude 会被关闭，装完后自动重新打开。
+   如果界面还是英文：左下角账号菜单 → Language → 简体中文。
+
+恢复原版：双击「一键卸载中文.bat」。
+
+注意
+----
+- 安装时 Claude 会被强制关闭，正在进行的对话会中断。请从文件资源管理器双击运行，
+  不要在 Claude 里让 Claude 帮你运行（它会把自己连同安装器一起关掉）。
+- Claude 自动更新后中文会消失，重新双击「一键安装中文.bat」即可。
+- 安装会改写 Claude.exe 里的完整性哈希，所以 Claude.exe 的官方数字签名会失效；
+  卸载时会从备份恢复成官方原版。
+- 安装日志：%TEMP%\ClaudeZhCnOneClick\install-windows.log
+
+来源
+----
+payload 文件夹是 https://github.com/javaht/claude-desktop-zh-cn 的
+提交 75dbacd9d6b235232babb25430fd8044ac15e63f（2026-10-28），已人工审查，
+只修改界面资源，不会在后台常驻或上传数据。只在 4.4212 上实际装过。
+这个项目不是 Anthropic 官方的，许可见 payload\LICENSE。
